@@ -24,7 +24,7 @@ print_r($result);
 //time,mktime,date
 //timeは現在時刻を取得する関数
 //dateは時刻型を特定の書式に変換する関数
-date_default_timezone_set('UTC');
+date_default_timezone_set('asia/tokyo');
 echo date('Y/m/d h:i',time()) . "\n";
 //mktimeは指定された時刻の時刻型データを生成する関数
 $tomorrow=mktime(0,0,0,date("m",time()),date("d",time())+1,date("Y",time()));
